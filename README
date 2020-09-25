@@ -1,0 +1,21 @@
+Instructions for building from scratch
+
+1. clone repo
+$ git clone git@github.com:VolleyBoast/VoBoNode.git
+
+2. update libs
+$ mbed update or $ mbed deploy
+
+3. compile code and flash resultant binary to mDot
+$ mbed compile -f
+
+
+NOTE: libmDot-mbed5.lib and mbed-os.lib are two build libraries in the root directory.  It is critical that the version of 
+mbed-os.lib used to build is the same as the one Multitech used to build libmDot-mbed5.lib.  
+
+To build with different versions of libmDot first change the content of the libmDot-mbed5.lib file as follows:
+  - for v3.3.5 (built with mbed-os v5.15.1) use "http://os.mbed.com/teams/MultiTech/code/libmDot-mbed5/#30cdba59e67e"
+  
+After the version of libmDot-mbed5.lib has been chosen and updated accordingly, the correct version of mbed-os.lib must
+be chosen/updated as well as follows:
+  - for v5.15.1 use "https://github.com/ARMmbed/mbed-os/#e642a7d8b3609a7c903e042cd772f00a5d299088"
