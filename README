@@ -21,3 +21,7 @@ To build with different versions of libmDot first change the content of the libm
 After the version of libmDot-mbed5.lib has been chosen and updated accordingly, the correct version of mbed-os.lib must
 be chosen/updated as well as follows:
   - for v5.15.1 use "https://github.com/ARMmbed/mbed-os/#e642a7d8b3609a7c903e042cd772f00a5d299088"
+
+OKAY
+
+OKAY 2
